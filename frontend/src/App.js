@@ -9,13 +9,12 @@ import { Toaster } from './components/ui/sonner';
 import { Home } from './pages/Home';
 import { Auth } from './pages/Auth';
 import { AdminLogin } from './pages/AdminLogin';
-import { SelectRole } from './pages/SelectRole';
 import { NGODashboard } from './pages/NGODashboard';
 import { DonorDashboard } from './pages/DonorDashboard';
 import { VolunteerDashboard } from './pages/VolunteerDashboard';
 import { AdminDashboard } from './pages/AdminDashboard';
 
-import '@/App.css';
+import './App.css';
 
 function App() {
   return (
@@ -28,16 +27,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/admin-login" element={<AdminLogin />} />
-
-          {/* Onboarding Routes */}
-          <Route
-            path="/select-role"
-            element={
-              <ProtectedRoute>
-                <SelectRole />
-              </ProtectedRoute>
-            }
-          />
 
           {/* Role-based Dashboards */}
           <Route

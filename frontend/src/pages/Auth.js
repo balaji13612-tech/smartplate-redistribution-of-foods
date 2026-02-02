@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 import { useAuth } from '../context/AuthContext';
+import { Auth } from './pages/Auth';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
@@ -8,6 +9,8 @@ import { Label } from '../components/ui/label';
 import { Building2, Heart, Truck, ArrowRight, Check, Phone, Shield } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
+
+
 
 const GOOGLE_CLIENT_ID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
 
@@ -252,4 +255,5 @@ export const Auth = () => {
     </GoogleOAuthProvider>
   );
 };
+
 

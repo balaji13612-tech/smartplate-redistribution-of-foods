@@ -16,7 +16,7 @@ const GOOGLE_CLIENT_ID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
 
 // REMINDER: DO NOT HARDCODE THE URL, OR ADD ANY FALLBACKS OR REDIRECT URLS, THIS BREAKS THE AUTH
 
-export const Auth = () => {
+export const AuthPage = () => {
   const { login, verifyPhone, selectRole, user } = useAuth();
   const navigate = useNavigate();
   const [step, setStep] = useState('login'); // login, phone, role
@@ -255,5 +255,6 @@ export const Auth = () => {
     </GoogleOAuthProvider>
   );
 };
+
 
 

@@ -7,7 +7,7 @@ import { Toaster } from './components/ui/sonner';
 
 // Pages
 import { Home } from './pages/Home';
-import Auth from './pages/Auth';
+import { Auth } from './pages/Auth';
 import { AdminLogin } from './pages/AdminLogin';
 import { NGODashboard } from './pages/NGODashboard';
 import { DonorDashboard } from './pages/DonorDashboard';
@@ -74,4 +74,3 @@ function App() {
 }
 
 export default App;
-
